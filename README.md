@@ -1,4 +1,4 @@
-📡 LGP - Lightweight GPS Protocol
+📡 SRV - GPS Protocol
 =================================
 
 Implementación de un protocolo de mensajería ligero diseñado para dispositivos GPS con restricciones críticas de **batería** y **ancho de banda**, operando sobre redes celulares inestables (2G/3G/4G).
@@ -68,7 +68,7 @@ El servidor escuchará en el puerto 5000 y guardará los logs.
 python servidor.py   
 ```
 
-> _Verás el mensaje: 📡 === SERVIDOR LGP (UDP) INICIADO ===_
+> _Verás el mensaje:  === SERVIDOR SRV (UDP) INICIADO ===_
 
 ### 2\. Iniciar el Cliente (Dispositivo GPS)
 
@@ -92,7 +92,7 @@ El sistema está diseñado para probar resiliencia. Intenta lo siguiente:
 
 📂 Estructura del Proyecto
 --------------------------
-    Protocolo_LGP
+    Protocolo_SRV
     ├── src
     |    ├── cliente_mv_01.py  
     |    ├── cliente_mv_02.py 

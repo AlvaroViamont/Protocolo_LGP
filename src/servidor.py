@@ -23,7 +23,7 @@ except ImportError:
 # --- CONFIGURACIÓN DEL PROTOCOLO ---
 IP_SERVIDOR = "0.0.0.0"   # Escuchar en todas las interfaces
 PUERTO = 5000             # Puerto UDP acordado
-BUFFER_SIZE = 1024        # Tamaño de buffer suficiente para LGP
+BUFFER_SIZE = 1024        # Tamaño de buffer suficiente para SRV
 LOG_FILE = "registro_gps.txt"
 
 def calcular_hash(contenido):
@@ -50,7 +50,7 @@ def iniciar_servidor():
     
     try:
         sock.bind((IP_SERVIDOR, PUERTO))
-        print(f"{COLOR_INFO} === SERVIDOR LGP (UDP) INICIADO ==={RESET}")
+        print(f"{COLOR_INFO} === SERVIDOR SRV (UDP) INICIADO ==={RESET}")
         print(f"{COLOR_INFO} Escuchando en puerto {PUERTO}...{RESET}")
         print(f"{COLOR_INFO} Guardando datos en '{LOG_FILE}'{RESET}")
         print("-" * 50)
@@ -60,7 +60,7 @@ def iniciar_servidor():
             data_bytes, addr = sock.recvfrom(BUFFER_SIZE)
             mensaje_full = data_bytes.decode('utf-8').strip()
             
-            # Formato esperado: LGP|ID|LAT|LON|BAT|TIME|CHECKSUM
+            # Formato esperado: SRV|ID|LAT|LON|BAT|TIME|CHECKSUM
             
             # 2. PARSING (Análisis de la trama)
             if "|" not in mensaje_full:
