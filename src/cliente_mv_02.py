@@ -33,8 +33,8 @@ def generar_coordenadas(lat_base, lon_base):
     return lat_base + desvio_lat, lon_base + desvio_lon
 
 def iniciar_cliente():
-    print(f"{C_DATA}📡 === INICIANDO DISPOSITIVO GPS: {ID_DISPOSITIVO} ==={RESET}")
-    print(f"{C_DATA}🎯 Destino: {IP_SERVIDOR}:{PUERTO}{RESET}")
+    print(f"{C_DATA} === INICIANDO DISPOSITIVO GPS: {ID_DISPOSITIVO} ==={RESET}")
+    print(f"{C_DATA} Destino: {IP_SERVIDOR}:{PUERTO}{RESET}")
     
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.settimeout(TIMEOUT_SEGUNDOS) # Importante: Si no responden, lanza error
