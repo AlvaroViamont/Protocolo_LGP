@@ -20,7 +20,7 @@ except ImportError:
 IP_SERVIDOR = "127.0.0.1"  # Localhost (para pruebas locales)
 PUERTO = 5000
 ID_DISPOSITIVO = "GPS-MOVIL-01"
-TIMEOUT_SEGUNDOS = 2       # Tiempo máximo de espera del ACK
+TIMEOUT_SEGUNDOS = 2     # Tiempo máximo de espera del ACK
 
 def calcular_hash(contenido):
     """Genera el mismo tipo de hash que el servidor espera"""
@@ -88,7 +88,7 @@ def iniciar_cliente():
                         print(f"{C_ERR}⛔ Error de Red: Se descarta el paquete y se sigue.{RESET}")
             
             # 5. Dormir para ahorrar energía (Simulado)
-            tiempo_dormir = 3
+            tiempo_dormir = 5
             print(f"💤 Durmiendo {tiempo_dormir}s...")
             time.sleep(tiempo_dormir)
 
