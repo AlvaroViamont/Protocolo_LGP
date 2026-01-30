@@ -94,7 +94,10 @@ El sistema está diseñado para probar resiliencia. Intenta lo siguiente:
 --------------------------
     Protocolo_LGP
     ├── src
-    |    ├── cliente.py         
+    |    ├── cliente_mv_01.py  
+    |    ├── cliente_mv_02.py 
+    |    ├── cliente_mv_03.py 
+    |    ├── cliente_mv_04.py        
     |    └── servidor.py          
     ├── Resultados
     |    ├── Captura_Funcionamiento.png

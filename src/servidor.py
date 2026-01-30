@@ -50,9 +50,9 @@ def iniciar_servidor():
     
     try:
         sock.bind((IP_SERVIDOR, PUERTO))
-        print(f"{COLOR_INFO}📡 === SERVIDOR LGP (UDP) INICIADO ==={RESET}")
-        print(f"{COLOR_INFO}📍 Escuchando en puerto {PUERTO}...{RESET}")
-        print(f"{COLOR_INFO}📝 Guardando datos en '{LOG_FILE}'{RESET}")
+        print(f"{COLOR_INFO} === SERVIDOR LGP (UDP) INICIADO ==={RESET}")
+        print(f"{COLOR_INFO} Escuchando en puerto {PUERTO}...{RESET}")
+        print(f"{COLOR_INFO} Guardando datos en '{LOG_FILE}'{RESET}")
         print("-" * 50)
 
         while True:
