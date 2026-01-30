@@ -54,8 +54,8 @@ def iniciar_cliente():
             timestamp = int(time.time())
             
             # 2. Construir Trama (Payload)
-            # Formato: LGP|ID|LAT|LON|BAT|TIME
-            payload = f"LGP|{ID_DISPOSITIVO}|{latitud:.6f}|{longitud:.6f}|{bateria}|{timestamp}"
+            # Formato: SRV|ID|LAT|LON|BAT|TIME
+            payload = f"SRV|{ID_DISPOSITIVO}|{latitud:.6f}|{longitud:.6f}|{bateria}|{timestamp}"
             
             # 3. Calcular Seguridad
             checksum = calcular_hash(payload)
