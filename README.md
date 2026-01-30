@@ -101,11 +101,9 @@ El sistema está diseñado para probar resiliencia. Intenta lo siguiente:
     |    └── servidor.py          
     ├── Resultados
     |    ├── Captura_Funcionamiento.png
-    |    ├── Captura_Seguridad.png
     |    └── registro_gps.txt    
     ├── Documentación
-    |    ├── Justificacion_Tecnica.pdf
-    |    └── Protocolo_LGP_Esquema.png
+    |    └── Justificacion_Tecnica.pdf
     ├── requirements.txt
     └── README.md            
 
